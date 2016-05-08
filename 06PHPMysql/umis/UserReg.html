@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+</head>
+<body>
+<form action="./admin/UsersAdd.php" method="post">
+	<table>
+		<caption>用户注册</caption>
+		<tr>
+			<th>
+				<label for="uname">用户名</label>
+			</th>
+			<td>
+				<input type="text" name="uname" id="uname"
+				required 
+				>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="password">密码</label>
+			</th>
+			<td>
+				<input type="password" name="password" id="password"
+				required 
+				>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="gender">性别</label>
+			</th>
+			<td>
+				<input type="radio" name="gender" value=0 checked>男 
+				<input type="radio" name="gender" value=1 checked>女 
+				
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="birthdate">生日</label>
+			</th>
+			<td>
+				<input type="date" name="birthdate" id="birthdate"
+				required 
+				>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="hobby">兴趣</label>
+			</th>
+			<td>
+				<input type="checkbox" name="hobby[]" value="旅游" 
+				checked 
+				>旅游
+				<input type="checkbox" name="hobby[]" value="登山" 
+				checked 
+				>登山
+				<input type="checkbox" name="hobby[]" value="健身" 
+				checked 
+				>健身
+				<input type="checkbox" name="hobby[]" value="上网" 
+				checked 
+				>上网
+
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="degree">学历 </label>
+			</th>
+			<td>
+				<select name="degree" >
+				<option value="">请选择</option>
+				<option value="0">高中</option>
+				<option value="1">本科</option>
+				<option value="2">硕士</option>
+				<option value="3">博士</option>	
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="intro">介绍</label>
+			</th>
+			<td>
+				<textarea name="intro" id="" cols="30" rows="10">自我简介</textarea>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="pic">头像</label>
+			</th>
+			<td>
+				<input type="file" name="pic" id="pic"
+				>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="提交">
+				<input type="reset" value="重置">
+
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

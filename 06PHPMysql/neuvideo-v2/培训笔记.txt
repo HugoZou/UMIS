@@ -1,0 +1,3 @@
+array_push($array,'');//往array数组添加''内容
+
+is_array（$..） //判断是否为数组
